@@ -1,43 +1,34 @@
-### [demoscope](https://github.com/LOLCODED/demoscope) — Chrome extension
+Mostly TypeScript. Everything here is open source.
+
+---
+
+### <img src="https://raw.githubusercontent.com/LOLCODED/demoscope/main/extension/assets/icon-48.png" width="20" align="absmiddle"> [demoscope](https://github.com/LOLCODED/demoscope) — Chrome extension
 
 **Record walkthroughs. Ship videos and docs.**
 
-Records what you actually see in the browser — every click, keystroke, scroll,
-and navigation, each captured with a screenshot — then turns that recording into
-either a polished MP4/GIF video or a step-by-step document. Everything is edited
-in the browser: no Playwright, no CLI, no server. Because it records your real
-session, pages behind a login just work.
-
-`TypeScript` `Svelte` `WebCodecs` `MV3`
+Records what you actually do in the browser — clicks, typing, scrolling — then
+turns it into a polished video or a step-by-step document. Everything is edited
+in the browser, and pages behind a login just work.
 
 [Chrome Web Store](https://chromewebstore.google.com/detail/demoscope-recorder/klabdpceilpikeogkjhcfaiflekihgoj)
 
 ---
 
-### [hoverglass](https://github.com/LOLCODED/hoverglass) — browser extension
+### <img src="https://raw.githubusercontent.com/LOLCODED/hoverglass/main/src/icons/icon-48.png" width="20" align="absmiddle"> [hoverglass](https://github.com/LOLCODED/hoverglass) — browser extension
 
 **Hover a thumbnail, see the real thing.**
 
-Expands an image or video next to your cursor when you hover its thumbnail, and
-follows the cursor as you move, repositioning to stay on screen. Plays YouTube
-and Twitch inline, handles Reddit videos and galleries, and can pin a preview to
-the centre or detach it into a draggable picture-in-picture window. One Manifest
-V3 codebase covers Chromium and Firefox.
-
-`TypeScript` `esbuild` `MV3` `Vitest`
+Hover a thumbnail and the full-size image or video opens next to your cursor.
+Plays YouTube and Twitch inline, and detaches into a picture-in-picture window
+you can drag around.
 
 [Chrome Web Store](https://chromewebstore.google.com/detail/hoverglass/poenkhibgnolpahibelcedibpdmfhlaj)
 
 ---
 
-### [music-player](https://github.com/LOLCODED/music-player) — app
+### <img src="https://raw.githubusercontent.com/LOLCODED/music-player/main/public/favicon.png" width="20" align="absmiddle"> [music-player](https://github.com/LOLCODED/music-player) — app
 
 **Your Subsonic library, everywhere.**
 
-A music player for any server that speaks the Subsonic API — Navidrome,
-Airsonic, Funkwhale, and the rest. Point it at your server, enter your
-credentials once, and it runs on the web, iOS, and Android from a single
-codebase via Capacitor. The web build ships as a Docker container, so
-self-hosting it is the same exercise as self-hosting the server behind it.
-
-`React` `TypeScript` `Capacitor` `Tailwind`
+Plays your Subsonic library — Navidrome, Airsonic, Funkwhale — on the web, iOS
+and Android. Self-hosts as a Docker container.
