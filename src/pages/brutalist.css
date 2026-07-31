@@ -1,0 +1,71 @@
+.bt-card {
+  gap: 12px;
+}
+
+.bt-card-top {
+  display: flex;
+  justify-content: space-between;
+  font: 11px/1 var(--mono);
+  letter-spacing: 0.14em;
+  color: var(--dim);
+}
+.bt-card:hover .bt-card-top {
+  color: #0a0a0a;
+}
+
+.bt-num {
+  font-weight: 700;
+}
+.bt-card-name {
+  font: 700 clamp(1.9rem, 4vw, 2.7rem) / 1 var(--sans);
+  letter-spacing: -0.03em;
+  color: var(--fg);
+}
+.bt-card:hover .bt-card-name {
+  color: #0a0a0a;
+}
+
+.bt-card-tagline {
+  font: 13px/1.5 var(--mono);
+  color: var(--accent);
+}
+.bt-card:hover .bt-card-tagline {
+  color: #0a0a0a;
+}
+
+.bt-card-desc {
+  font: 13px/1.65 var(--mono);
+  color: var(--muted);
+  flex: 1;
+}
+.bt-card:hover .bt-card-desc {
+  color: rgba(10, 10, 10, 0.82);
+}
+
+.bt-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+.bt-tech li {
+  padding: 3px 8px;
+  border: 2px solid var(--border);
+  font: 10px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.bt-card:hover .bt-tech li {
+  border-color: #0a0a0a;
+  color: #0a0a0a;
+}
+
+.bt-card-cta {
+  font: 700 12px/1 var(--mono);
+  letter-spacing: 0.12em;
+  color: var(--fg);
+}
+.bt-card:hover .bt-card-cta {
+  color: #0a0a0a;
+}
