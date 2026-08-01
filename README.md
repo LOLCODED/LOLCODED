@@ -22,7 +22,7 @@ Hover a thumbnail and the full-size image or video opens next to your cursor.
 Plays YouTube and Twitch inline, and detaches into a picture-in-picture window
 you can drag around.
 
-[Chrome Web Store](https://chromewebstore.google.com/detail/hoverglass/poenkhibgnolpahibelcedibpdmfhlaj)
+[Chrome Web Store](https://chromewebstore.google.com/detail/hoverglass/poenkhibgnolpahibelcedibpdmfhlaj) · [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/hoverglass/)
 
 ---
 
