@@ -33,8 +33,53 @@ export interface Repo {
 
 export const GITHUB_USER = 'LOLCODED'
 export const GITHUB_URL = `https://github.com/${GITHUB_USER}`
+export const CONTACT_EMAIL = 'contact@lolcoded.dev'
 
 export const repos: Repo[] = [
+  {
+    name: 'dispatch',
+    slug: 'dispatch',
+    tagline: 'Hand a ticket to your coding agent. Get back a tested commit.',
+    description:
+      'Runs your coding agent on your tickets in isolated Git worktrees, runs your real checks against the exact result, and hands you a commit that passed them — with the full trail of how it got there.',
+    longDescription:
+      'Dispatch is the layer around the coding agent you already use, not another agent. Paste a ticket or a work item link and it spins up a fresh worktree and branch, starts your CLI, then runs your tests, lint and build against the exact tree the agent produced. A run is ready only when every required check passes on that revision. Nothing is pushed unless you turn it on.',
+    tech: ['Node.js', 'React', 'Playwright', 'Git'],
+    url: `${GITHUB_URL}/dispatch`,
+    kind: 'tool',
+    image: {
+      src: '/dispatch/hero.webp',
+      alt: 'Typing a ticket, pressing dispatch, and watching the agent work: its browser runs live, then checks pass and the Result drawer opens.',
+      width: 960,
+      height: 600,
+      full: { src: '/dispatch/hero-full.webp', width: 1200, height: 750 },
+    },
+    screenshots: [
+      {
+        src: '/dispatch/1.webp',
+        alt: 'Answering a question from the task list: the run resumes, changes one file and passes its checks.',
+        width: 640,
+        height: 400,
+        full: { src: '/dispatch/1-full.webp', width: 1200, height: 750 },
+      },
+      {
+        src: '/dispatch/2.webp',
+        alt: "Replaying the agent's browser steps in the Timeline, each with its screenshot and the element acted on.",
+        width: 640,
+        height: 400,
+        full: { src: '/dispatch/2-full.webp', width: 1200, height: 750 },
+      },
+    ],
+    features: [
+      'Paste a ticket, walk away — text or a work item link; dispatch picks the repository, creates a worktree and branch, and starts your CLI.',
+      'Checks decide "done", not the model — tests, lint and build run against the exact tree the agent produced.',
+      'Scoped checks — the diff decides what runs, so a docs tweak skips the e2e suite.',
+      'One repair, same session — a failing check goes back to the agent that wrote the code, with bounded output and no runaway loops.',
+      'Rewind anything — the Timeline replays tool calls, file changes, browser actions with screenshots, check videos and Playwright traces.',
+      'Your agent providers, as-is — each keeps its own login and sandbox; dispatch copies no credentials.',
+      'Delivery when you want it — push a branch, open a draft PR, or update the work item, each off until enabled per repository.',
+    ],
+  },
   {
     name: 'demoscope',
     slug: 'demoscope',

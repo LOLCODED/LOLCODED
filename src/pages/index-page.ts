@@ -1,4 +1,4 @@
-import { repos } from '../data/repos'
+import { CONTACT_EMAIL, repos } from '../data/repos'
 import type { Repo } from '../data/repos'
 import type { RenderContext } from '../render/context'
 import { siteBar, siteFooter } from '../render/chrome'
@@ -8,7 +8,7 @@ import { documentHtml } from '../render/layout'
 import type { Html } from '../render/html'
 
 const DESCRIPTION =
-  'LOLCODED — browser extensions and small, self-hostable apps. Open source, dark by default.'
+  'LOLCODED — developer tools, browser extensions and small, self-hostable apps.'
 
 function card(context: RenderContext, repo: Repo, index: number): Html {
   return projectLink(
@@ -29,14 +29,24 @@ function card(context: RenderContext, repo: Repo, index: number): Html {
   )
 }
 
+function contact(): Html {
+  return html`<section class="site-grid">
+    <div class="site-cell site-cell--full bt-contact">
+      <h2 class="site-cell-title">contact</h2>
+      <a class="bt-contact-email" href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
+      <p class="bt-contact-note">Questions, ideas, or work.</p>
+    </div>
+  </section>`
+}
+
 export function renderIndexPage(context: RenderContext, year: number): string {
   const body = html`<div class="site">
-      ${siteBar(context, { middle: `${repos.length} REPOS / 0 DEPENDENCIES ON YOU` })}
+      ${siteBar(context)}
 
       <section class="site-hero">
         <h1 class="site-title">LOL<span class="site-title-accent">CODED</span></h1>
         <p class="site-lede">
-          Browser extensions and small self-hostable apps. Built in TypeScript,
+          Developer tools, browser extensions and small self-hostable apps. Built in TypeScript,
           shipped as source, themed like a terminal.
         </p>
       </section>
@@ -44,6 +54,8 @@ export function renderIndexPage(context: RenderContext, year: number): string {
       <section class="site-grid">
         ${repos.map((repo, index) => card(context, repo, index))}
       </section>
+
+      ${contact()}
 
       ${siteFooter(year)}
     </div>`
