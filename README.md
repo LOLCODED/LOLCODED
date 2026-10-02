@@ -2,6 +2,17 @@ Mostly TypeScript. Everything here is open source.
 
 ---
 
+### <img src="https://raw.githubusercontent.com/LOLCODED/dispatch/main/docs/assets/dispatch-logo.svg" width="20" align="absmiddle"> [dispatch](https://github.com/LOLCODED/dispatch) — local app
+
+**Bring your own agent. Get back a tested result.**
+
+A local task desk for the coding CLIs you already use — Codex, Claude Code,
+Cursor, OpenCode, pi, or a local model through Ollama. Each task gets its own
+Git worktree, your real checks, and a place on one board. When the agent needs
+you, you get a short question with screenshots and the running app to try.
+
+---
+
 ### <img src="https://raw.githubusercontent.com/LOLCODED/demoscope/main/extension/assets/icon-48.png" width="20" align="absmiddle"> [demoscope](https://github.com/LOLCODED/demoscope) — Chrome extension
 
 **Record walkthroughs. Ship videos and docs.**
